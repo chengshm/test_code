@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equlv="Content-Type" content="text/html;charset=UTF-8">
+    <title>用户登录</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #2980b9, #3498db);
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            width: 300px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        h2 {
+            color: #3498db;
+        }
+
+        .input-group {
+            margin: 20px 0;
+        }
+
+        .input-group label {
+            color: #555;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 5px;
+            background-color: #ecf0f1;
+            color: #555;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .input-group input:focus {
+            outline: none;
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: linear-gradient(to bottom, #3498db, #2980b9);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: linear-gradient(to bottom, #2980b9, #3498db);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>用户登录</h2>
+        <form action="login.php" method="post">
+            <div class="input-group">
+                <label for="username">用户名</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">密码</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn">登录</button>
+        </form>
+    </div>
+</body>
+</html>
